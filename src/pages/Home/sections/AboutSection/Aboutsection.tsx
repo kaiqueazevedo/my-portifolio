@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
     }));
 
     const skillsSet = [
-        "Javascript", "Typescript", "React", "Next", "Git", "HTML", "CSS", "Cypress", "AWS", "GCP", "Material UI", "Figma"
+        "Javascript", "NodeJS", "Express", "Docker", "Git", "HTML", "CSS", "Cypress", "Python", "FastApi", "Selenium", "Linux"
     ]
 
     return (
@@ -48,17 +48,7 @@ const AboutSection: React.FC = () => {
                 </Grid>
                 <Box pb={1}>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cras porta semper velit vel rutrum.
-                        Aliquam vulputate, nisi eget tristique mattis, nisi sem faucibus eros, a auctor felis sem ut mauris.
-                        Phasellus a ultrices elit.
-                        Curabitur ut diam eu orci auctor pretium.
-                        Nullam ultricies erat quam, eget porta velit vehicula sit amet.
-                        Nullam sodales iaculis metus, sed vestibulum nisl vulputate at.
-                        Integer in pulvinar libero.
-                        Donec ornare est quis tortor varius efficitur.
-                        Maecenas sed erat quis felis facilisis pellentesque.
-                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id felis convallis, luctus lorem eget, varius dolor.
+                        Profissional de Tecnologia com experiência em Suporte Técnico, Automação (RPA) e Desenvolvimento Web (Node.js/Python). Atuo criando soluções que reduzem trabalho manual, aumentam produtividade e melhoram a eficiência dos processos.Experiência prática com:Python, Selenium, Pandas, PyAutoGUI, OpenPyXLAutomação de processos operacionais (RPA)Web Scraping e manipulação de dadosNode.js, Express, APIs RESTSQL, MySQL e Power BIEntrego automações ponta a ponta: análise → desenvolvimento → testes → implantação → acompanhamento.Tenho facilidade em aprender, resolver problemas e transformar processos manuais em fluxos automatizados. Busco oportunidades como Suporte Técnico, RPA, TI Operacional e Desenvolvimento Web, onde eu possa aplicar minhas habilidades e gerar valor real.Palavras-chave: Python, Node.js, RPA, Automação de Processos, Selenium, Suporte Técnico, SQL, Power BI, Web Scraping, ETL.
                     </Typography>
                 </Box>
                 <hr />
