@@ -10,7 +10,7 @@ palette: {
     },
 },
 typography: {
-    fontFamily:'"Helvetica Neue", Helvetica, Arial, sans-serif'
+    fontFamily:"Helvetica Neue"
 }
 });
 

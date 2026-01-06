@@ -1,86 +1,75 @@
-// import { styled } from '@mui/material/styles'
-// import Avatar from "../../../../assets/images/avatar.png"
-// import { Grid, Typography, Container } from '@mui/material'
-
-// const Hero = () => {
-
-//   const StyledHero = styled("div")(() => ({
-//     backgroundColor: "black",
-//     height: "100vh"
-//   }))
-
-//   const StyledImg = styled("img")(() => ({
-//     width: "100%",
-//     borderRadius: "50%"
-//   }))
-
-//   return (
-//     <>
-//       <StyledHero>
-//         <Container>
-//           <Grid container spacing={2}>
-//             <Grid item xs={4}>
-//               <StyledImg src={Avatar} />
-//             </Grid>
-
-//             <Grid item xs={8}>
-//               <Typography color='primary' variant="h1">Kaique Azevedo</Typography>
-//               <Typography color='primary' variant="h2"> I'm a Developer Backend</Typography>
-//             </Grid>
-//           </Grid>
-//         </Container>
-//       </StyledHero>
-//     </>
-//   )
-// }
-
-// export default Hero
-
 import { styled } from '@mui/material/styles'
 import Avatar from "../../../../assets/images/avatar.png"
-import { Grid, Typography, Container, Button } from '@mui/material'
+import { Grid, Typography, Container, Box } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download'
 import EmailIcon from '@mui/icons-material/Email'
+import StyledButton from '../../../../components/StyledButtons/StyledButton'
+import { AnimatedBackground } from "../../../../components/StyledButtons/AnimetedBackground/animatebackground"
+
 
 const Hero = () => {
 
-  const StyledHero = styled("div")(() => ({
-    backgroundColor: "black",
+  const StyledHero = styled("div")(({ theme }) => ({
+    backgroundColor: theme.palette.primary.main,
     minHeight: "100vh",
+    display: "flex",
+    alignItems: "center",
   }))
 
   const StyledImg = styled("img")(() => ({
     width: "100%",
     maxWidth: "280px",
     borderRadius: "50%",
+    border: "1px solid white",
+    position: "relative",
+    zIndex: 2,
   }))
 
   return (
     <StyledHero>
       <Container maxWidth="lg">
-        <Grid container spacing={2}>
+        <Grid container spacing={2} alignItems="center">
 
-          {/* IMAGEM */}
-          <Grid item xs={12} md={4} display="flex"><StyledImg src={Avatar} />
+          {/* IMAGEM + BACKGROUND */}
+          <Grid item xs={12} md={5} display="flex" justifyContent="center">
+            <Box position="relative" display="flex" justifyContent="center">
+
+              <Box position="absolute" width="200%" top={-100} right={0} zIndex={1}>
+                <AnimatedBackground />
+              </Box>
+              <Box position={'relative'} textAlign={'center'}>
+
+              <StyledImg src={Avatar} />
+              </Box>
+
+            </Box>
           </Grid>
 
           {/* TEXTO */}
-          <Grid item xs={12} md={8}>
-            <Typography color="primary" variant="h1" textAlign="center">Kaique Azevedo</Typography>
-            <Typography color="primary" variant="h2" textAlign="center">I'm a Developer Backend</Typography>
-            <Grid container display="flex" justifyContent="center">
+          <Grid item xs={12} md={7}>
+            <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>
+              Kaique Azevedo
+            </Typography>
+
+            <Typography color="primary.contrastText" variant="h2" textAlign="center">
+              I'm a Developer Backend
+            </Typography>
+
+            {/* BOTÕES */}
+            <Grid container justifyContent="center" spacing={3} sx={{ mt: 3 }} pb={3}>
+
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <Button>
+                <StyledButton>
                   <DownloadIcon />
-                  Download CV
-                </Button>
+                  <Typography>Download CV</Typography>
+                </StyledButton>
               </Grid>
 
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <Button>
+                <StyledButton>
                   <EmailIcon />
-                  Contact me
-                </Button>
+                  <Typography>Contact me</Typography>
+                </StyledButton>
               </Grid>
             </Grid>
 
