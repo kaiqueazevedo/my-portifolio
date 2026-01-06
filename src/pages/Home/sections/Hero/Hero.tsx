@@ -14,6 +14,13 @@ const Hero = () => {
     minHeight: "100vh",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.up('xs')]:{
+      paddingTop: "100px",
+    },
+    [theme.breakpoints.up('md')]:{
+      paddingTop: "0",
+    },
+
   }))
 
   const StyledImg = styled("img")(() => ({
@@ -59,14 +66,14 @@ const Hero = () => {
             <Grid container justifyContent="center" spacing={3} sx={{ mt: 3 }} pb={3}>
 
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <StyledButton>
+                <StyledButton onClick={()=> console.log("download")}>
                   <DownloadIcon />
                   <Typography>Download CV</Typography>
                 </StyledButton>
               </Grid>
 
               <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                <StyledButton>
+                <StyledButton onClick={()=> console.log("contact")}>
                   <EmailIcon />
                   <Typography>Contact me</Typography>
                 </StyledButton>

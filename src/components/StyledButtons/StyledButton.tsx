@@ -3,9 +3,10 @@ import { useTheme } from "@mui/material/styles"
 
 interface StyledButtonProps {
     children: ReactNode
+    onClick: () => void
 }
 
-const StyledButton: React.FC <StyledButtonProps> = ({children}) => {
+const StyledButton: React.FC <StyledButtonProps> = ({children, onClick}) => {
 
     const ButtonStyled = styled("button")(({ theme }) => ({
     backgroundColor: "transparent",
@@ -27,7 +28,7 @@ const StyledButton: React.FC <StyledButtonProps> = ({children}) => {
 
 
   return (
-    <ButtonStyled>
+    <ButtonStyled onClick={onClick}>
         {children}
     </ButtonStyled>
   )
