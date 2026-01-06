@@ -7,6 +7,15 @@ import StyledButton from '../../../../components/StyledButtons/StyledButton'
 import { AnimatedBackground } from "../../../../components/StyledButtons/AnimetedBackground/animatebackground"
 
 
+// const HeroSection: React.FC = () => {
+
+//     const StyledImg = styled("img")(({ theme }) => ({
+//         width: "80%",
+//         border: `1px solid ${theme.palette.primary.contrastText}`,
+//         borderRadius: "50%",
+//         position: "relative"
+//     }));
+
 const Hero = () => {
 
   const StyledHero = styled("div")(({ theme }) => ({
@@ -24,7 +33,7 @@ const Hero = () => {
   }))
 
   const StyledImg = styled("img")(() => ({
-    width: "100%",
+    width: "90%",
     maxWidth: "280px",
     borderRadius: "50%",
     border: "1px solid white",
@@ -88,3 +97,11 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+
+
+
+
+
+
