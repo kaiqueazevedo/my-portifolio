@@ -1,25 +1,120 @@
 # React + TypeScript + Vite
-📌 Meu Portfólio – Kaique Azevedo
+Sobre o Projeto
 
-Meu portfólio pessoal com meus principais projetos e habilidades como desenvolvedor.
-Projetado para mostrar meu trabalho real e competências técnicas.
+Este portfólio é uma aplicação web moderna, construída com React + TypeScript e estilizada com Material UI (MUI).
 
-🚀 Sobre
+Objetivos do projeto:
 
-Sou desenvolvedor backend (ou full-stack) com foco em:
+Mostrar projetos completos com descrição, tecnologias e links para demos/código.
 
-APIs REST
+Demonstrar boa organização de código e padrões de projeto.
 
-Arquitetura de software
+Servir como ponto de referência técnico para recrutadores e avaliadores.
 
-Banco de dados
+2️⃣ Estrutura do Código
 
-Deploy em nuvem
+O projeto segue uma estrutura de pastas organizada, baseada em componentização e separação de responsabilidades:
 
-Testes automatizados
+my-portifolio/
+├─ public/           # Imagens, favicon e arquivos estáticos
+├─ src/
+│  ├─ components/    # Componentes reutilizáveis
+│  │  ├─ StyledButtons/  
+│  │  ├─ ProjectCard/
+│  │  └─ ...
+│  ├─ pages/         # Páginas do site (Home, About, Projects)
+│  ├─ assets/        # Imagens e ícones usados nos projetos
+│  ├─ styles/        # Arquivos CSS ou styled components
+│  ├─ App.tsx        # Componente principal
+│  └─ main.tsx       # Entrada do React + renderização
+├─ package.json       # Dependências e scripts
+└─ README.md
 
-Este repositório apresenta meu portfólio público, com demos, links e explicação técnica dos projetos.
+Explicação das pastas principais
 
+components/ → Contém componentes reutilizáveis, como botões, cards de projetos e seções.
+
+pages/ → Cada página do portfólio (Home, Projetos, Sobre) está organizada separadamente.
+
+assets/ → Imagens, ícones e recursos visuais utilizados nos projetos.
+
+styles/ → Estilos globais ou locais (CSS ou MUI Styled Components).
+
+3️⃣ Tecnologias Utilizadas
+
+Frontend: React + TypeScript
+
+Estilização: Material UI (MUI) + CSS/styled-components
+
+Ferramentas: Vite (bundler), Node.js, npm
+
+Controle de versão: Git + GitHub
+
+Deploy: Vercel
+
+4️⃣ Como Iniciar o Projeto
+
+Siga este passo a passo para rodar o portfólio localmente:
+
+# 1. Clonar o repositório
+git clone https://github.com/kaiqueazevedo/my-portifolio.git
+
+# 2. Entrar na pasta do projeto
+cd my-portifolio
+
+# 3. Instalar dependências
+npm install
+
+# 4. Rodar o projeto em modo de desenvolvimento
+npm run dev
+
+
+O projeto será iniciado em http://localhost:5173/ por padrão.
+
+5️⃣ Scripts Disponíveis
+
+npm run dev → Inicia o servidor de desenvolvimento
+
+npm run build → Compila o projeto para produção
+
+npm run preview → Visualiza o build localmente
+
+6️⃣ Componentes Principais
+
+Hero Section → Apresentação do portfólio
+
+ProjectSection → Lista de projetos com cards interativos
+
+StyledButton → Botões personalizados reutilizáveis
+
+Footer → Contato e links de redes sociais
+
+Cada componente está documentado com props e exemplos de uso no código.
+
+7️⃣ Deploy
+
+O portfólio está hospedado no Vercel e acessível em produção:
+🔗 https://my-portifolio-psi-sage.vercel.app/
+
+8️⃣ Considerações Técnicas
+
+Estrutura baseada em componentes funcionais com TypeScript.
+
+Uso de MUI Theme para consistência visual.
+
+Componentes reutilizáveis facilitam manutenção e escalabilidade.
+
+Versionamento organizado com commits claros no GitHub.
+
+Preparado para expansão futura, incluindo projetos backend ou integrações com APIs.
+
+9️⃣ Contato
+
+LinkedIn: https://www.linkedin.com/in/kaiqueazevedo
+
+GitHub: https://github.com/kaiqueazevedo
+
+Portfólio: https://my-portifolio-psi-sage.vercel.app/
 🧠 Tecnologias que uso
 
 ✔ Node.js (ou outra stack que você usa)
