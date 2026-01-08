@@ -73,6 +73,99 @@
 
 
 
+// import React from "react";
+// import { Grid, Typography, styled } from "@mui/material";
+// import StyledButton from "../StyledButtons/StyledButton";
+
+// export interface ProjectCardProps {
+//   title: string;
+//   subtitle: string;
+//   srcImg: string;
+//   description: string;
+//   technologies: string;
+//   websiteURL?: string;
+//   codeURL?: string;
+// }
+
+// // Styled components fora do componente
+// const StyledImg = styled("img")(({ theme }) => ({
+//   width: "100%",
+//   objectFit: "contain",
+//   height: "80vw",
+//   padding: "10px 0",
+//   [theme.breakpoints.up("md")]: {
+//     height: "45vh",
+//   },
+// }));
+
+// const StyledCard = styled("div")(({ theme }) => ({
+//   borderRadius: "3px",
+//   border: `0.5px solid ${theme.palette.primary.contrastText}`,
+//   backgroundColor: "transparent",
+//   color: theme.palette.primary.contrastText,
+//   padding: "20px",
+//   transition: "background-color 0.3s ease",
+//   "&:hover": {
+//     backgroundColor: theme.palette.primary.light,
+//   },
+// }));
+
+// const ProjectCard: React.FC<ProjectCardProps> = ({
+//   title,
+//   subtitle,
+//   srcImg,
+//   description,
+//   technologies,
+//   websiteURL,
+//   codeURL,
+// }) => {
+//   return (
+//     <StyledCard>
+//       <Typography variant="h5">{title}</Typography>
+
+//       <Typography>{subtitle}</Typography>
+
+//       <StyledImg src={srcImg} alt={title} />
+
+//       <Typography>{description}</Typography>
+
+//       <Typography fontWeight={600} pt={2}>
+//         {technologies}
+//       </Typography>
+
+//       <Grid container spacing={1} pt={2}>
+//         {websiteURL && (
+//           <Grid item xs={6}>
+//             <StyledButton onClick={() => window.open(websiteURL, "_blank")}>
+//               View Project
+//             </StyledButton>
+//           </Grid>
+//         )}
+
+//         {codeURL && (
+//           <Grid item xs={6}>
+//             <StyledButton onClick={() => window.open(codeURL, "_blank")}>
+//               View Code
+//             </StyledButton>
+//           </Grid>
+//         )}
+//       </Grid>
+//     </StyledCard>
+//   );
+// };
+
+// export default ProjectCard;
+
+
+
+
+
+
+
+
+
+
+
 import React from "react";
 import { Grid, Typography, styled } from "@mui/material";
 import StyledButton from "../StyledButtons/StyledButton";
@@ -87,7 +180,7 @@ export interface ProjectCardProps {
   codeURL?: string;
 }
 
-// Styled components fora do componente
+/* Styled components */
 const StyledImg = styled("img")(({ theme }) => ({
   width: "100%",
   objectFit: "contain",
@@ -122,7 +215,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <StyledCard>
       <Typography variant="h5">{title}</Typography>
-
       <Typography>{subtitle}</Typography>
 
       <StyledImg src={srcImg} alt={title} />
