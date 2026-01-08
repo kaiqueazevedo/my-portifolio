@@ -11,36 +11,7 @@ Demonstrar boa organização de código e padrões de projeto.
 
 Servir como ponto de referência técnico para recrutadores e avaliadores.
 
-2️⃣ Estrutura do Código
-
-O projeto segue uma estrutura de pastas organizada, baseada em componentização e separação de responsabilidades:
-
-my-portifolio/
-├─ public/           # Imagens, favicon e arquivos estáticos
-├─ src/
-│  ├─ components/    # Componentes reutilizáveis
-│  │  ├─ StyledButtons/  
-│  │  ├─ ProjectCard/
-│  │  └─ ...
-│  ├─ pages/         # Páginas do site (Home, About, Projects)
-│  ├─ assets/        # Imagens e ícones usados nos projetos
-│  ├─ styles/        # Arquivos CSS ou styled components
-│  ├─ App.tsx        # Componente principal
-│  └─ main.tsx       # Entrada do React + renderização
-├─ package.json       # Dependências e scripts
-└─ README.md
-
-Explicação das pastas principais
-
-components/ → Contém componentes reutilizáveis, como botões, cards de projetos e seções.
-
-pages/ → Cada página do portfólio (Home, Projetos, Sobre) está organizada separadamente.
-
-assets/ → Imagens, ícones e recursos visuais utilizados nos projetos.
-
-styles/ → Estilos globais ou locais (CSS ou MUI Styled Components).
-
-3️⃣ Tecnologias Utilizadas
+2️⃣ Tecnologias Utilizadas
 
 Frontend: React + TypeScript
 
@@ -52,7 +23,7 @@ Controle de versão: Git + GitHub
 
 Deploy: Vercel
 
-4️⃣ Como Iniciar o Projeto
+4️3 Como Iniciar o Projeto
 
 Siga este passo a passo para rodar o portfólio localmente:
 
@@ -71,7 +42,7 @@ npm run dev
 
 O projeto será iniciado em http://localhost:5173/ por padrão.
 
-5️⃣ Scripts Disponíveis
+5️4 Scripts Disponíveis
 
 npm run dev → Inicia o servidor de desenvolvimento
 
@@ -79,7 +50,7 @@ npm run build → Compila o projeto para produção
 
 npm run preview → Visualiza o build localmente
 
-6️⃣ Componentes Principais
+6️5 Componentes Principais
 
 Hero Section → Apresentação do portfólio
 
@@ -91,12 +62,12 @@ Footer → Contato e links de redes sociais
 
 Cada componente está documentado com props e exemplos de uso no código.
 
-7️⃣ Deploy
+7️6 Deploy
 
 O portfólio está hospedado no Vercel e acessível em produção:
 🔗 https://my-portifolio-psi-sage.vercel.app/
 
-8️⃣ Considerações Técnicas
+8️7  Considerações Técnicas
 
 Estrutura baseada em componentes funcionais com TypeScript.
 
@@ -108,25 +79,24 @@ Versionamento organizado com commits claros no GitHub.
 
 Preparado para expansão futura, incluindo projetos backend ou integrações com APIs.
 
-9️⃣ Contato
+9️8 Contato
 
 LinkedIn: https://www.linkedin.com/in/kaiqueazevedo
 
 GitHub: https://github.com/kaiqueazevedo
 
 Portfólio: https://my-portifolio-psi-sage.vercel.app/
-🧠 Tecnologias que uso
 
-✔ Node.js (ou outra stack que você usa)
+ Tecnologias que uso
+
+
 ✔ TypeScript / JavaScript (ou outra linguagem)
 ✔ Express, Fastify ou similar
-✔ Banco de dados (ex.: PostgreSQL, MongoDB)
-✔ Docker
-✔ Testes (Jest, Supertest, etc.)
+
 
 (adicione ícones se quiser)
 
-🌟 Destaques
+Destaques
 Projeto	Descrição	Tecnologias	Demo	Código
 🛠 Projeto 1	API de gerenciamento…	Node + Express + DB	🔗 link	🟦 GitHub
 📦 Projeto 2	Serviço que faz…	Python + Flask	🔗 link	🟦 GitHub
