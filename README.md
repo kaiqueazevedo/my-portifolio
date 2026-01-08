@@ -1,23 +1,72 @@
 # React + TypeScript + Vite
+📌 Meu Portfólio – Kaique Azevedo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Meu portfólio pessoal com meus principais projetos e habilidades como desenvolvedor.
+Projetado para mostrar meu trabalho real e competências técnicas.
 
-Currently, two official plugins are available:
+🚀 Sobre
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sou desenvolvedor backend (ou full-stack) com foco em:
 
-## React Compiler
+APIs REST
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Arquitetura de software
 
-## Expanding the ESLint configuration
+Banco de dados
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Deploy em nuvem
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
+Testes automatizados
+
+Este repositório apresenta meu portfólio público, com demos, links e explicação técnica dos projetos.
+
+🧠 Tecnologias que uso
+
+✔ Node.js (ou outra stack que você usa)
+✔ TypeScript / JavaScript (ou outra linguagem)
+✔ Express, Fastify ou similar
+✔ Banco de dados (ex.: PostgreSQL, MongoDB)
+✔ Docker
+✔ Testes (Jest, Supertest, etc.)
+
+(adicione ícones se quiser)
+
+🌟 Destaques
+Projeto	Descrição	Tecnologias	Demo	Código
+🛠 Projeto 1	API de gerenciamento…	Node + Express + DB	🔗 link	🟦 GitHub
+📦 Projeto 2	Serviço que faz…	Python + Flask	🔗 link	🟦 GitHub
+
+(preencha com seus projetos reais)
+
+📌 Como executar localmente
+# clonar o repositório
+git clone https://github.com/kaiqueazevedo/my-portifolio.git
+
+# entrar na pasta
+cd my-portifolio
+
+# instalar dependências
+npm install
+
+# rodar o projeto
+npm run dev
+
+
+Adicione aqui também variáveis de ambiente necessárias e instruções de deploy.
+
+🧪 Testes
+npm test
+
+
+Explique brevemente que tipo de testes existem, cobertura e como rodar.
+
+📈 Skills detalhadas
+
+✅ Desenvolvimento de APIs
+✅ Modelagem de banco de dados
+✅ Tratamento de erros
+✅ Autenticação & autorização
+✅ Testes automatizados
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
